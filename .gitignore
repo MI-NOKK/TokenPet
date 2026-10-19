@@ -21,3 +21,6 @@ TokenPet-Windows-*/
 *.p12
 *.pem
 
+Assets/PROMPTS.md
+Assets/USAGI-PROMPTS.md
+Assets/REFERENCE-V2-PROMPTS.md

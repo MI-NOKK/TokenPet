@@ -1,6 +1,6 @@
 # TokenPet for Windows
 
-바탕화면에서 AI 사용 한도를 알려주는 **우사기 펫**. 이번 버전은 사용자가 첨부한 그림 4장과 [참고 릴](https://www.instagram.com/reel/DW6I9jyk8Co/)을 바탕으로 대기·산책·야하·우라·엎드리기·눈 뜨고 쉬기 이미지를 모두 다시 만들었습니다. 작은 눈, 짧은 팔다리와 둥근 얼굴을 살리고, 납작하게 엎드린 동작을 추가했습니다. [이미지 생성 방식과 최종 프롬프트](Assets/REFERENCE-V2-PROMPTS.md)
+바탕화면에서 AI 사용 한도를 알려주는 **우사기 펫**. 이번 버전은 사용자가 첨부한 그림 4장과 [참고 릴](https://www.instagram.com/reel/DW6I9jyk8Co/)을 바탕으로 대기·산책·야하·우라·엎드리기·눈 뜨고 쉬기 이미지를 모두 다시 만들었습니다. 작은 눈, 짧은 팔다리와 둥근 얼굴을 살리고, 납작하게 엎드린 동작을 추가했습니다.
 
 현재 실제 연동은 **ChatGPT로 로그인한 Codex CLI**를 지원합니다. Claude, Gemini 및 일반 ChatGPT 대화의 사용량은 아직 지원하지 않습니다. 구독 한도는 정확한 잔여 토큰 수가 아닌 서버가 제공하는 **남은 비율**로 표시합니다. API 키 전용 계정의 토큰 잔액을 계산하지 않습니다.
 
@@ -39,7 +39,7 @@
 
 우클릭 → **우사기 움직임**에서 자동 모드 또는 원하는 동작을 선택합니다. 자동 모드는 4~8초 간격으로 동작을 바꾸고, 한도가 10% 이하이면 엎드리기와 눈 뜨고 쉬기를 사용합니다. 최소화 시 애니메이션 타이머를 멈춥니다. 그림은 포즈 6장의 PNG이며 호흡·회전·이동·점프는 코드로 보간합니다.
 
-`usagi-compact.gif`는 머리 위 요약 모드 미리보기, `rabbit-motions.gif`는 동작 모음, `rabbit-poses.png`는 포즈 모음입니다. 현재 사용하는 이미지는 `Assets/usagi-v2-{idle,walk,wave,jump,prone,sleep}.png`입니다. 첨부한 원본 4장은 `Assets/References-20261018/`에 보존했습니다. 이전 이미지도 프로젝트의 `Assets`에 보존했습니다. 내장 이미지 생성 도구로 만든 새 포즈의 프롬프트는 `Assets/REFERENCE-V2-PROMPTS.md`에 기록했습니다.
+`usagi-compact.gif`는 머리 위 요약 모드 미리보기, `rabbit-motions.gif`는 동작 모음, `rabbit-poses.png`는 포즈 모음입니다. 현재 사용하는 이미지는 `Assets/usagi-v2-{idle,walk,wave,jump,prone,sleep}.png`입니다. 첨부한 원본 4장은 `Assets/References-20261018/`에 보존했습니다. 이전 이미지도 프로젝트의 `Assets`에 보존했습니다.
 
 `TokenPet.exe --demo`는 **샘플 데이터**라고 표시되는 미리보기입니다. 실제 연결 실패 시 이전 수치를 현재 잔여량처럼 표시하지 않습니다. 초기화 시간이 지났더라도 서버 확인 전까지 잔여량을 임의로 늘리지 않습니다.
 
